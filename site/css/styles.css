@@ -1,11 +1,21 @@
 .container {
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  background-color: #70C4CE; }
   @media screen and (min-width: 640px) {
     .container {
       width: 90%;
       max-width: 960px;
       margin: 0 auto; } }
+
+.content {
+  margin: 0 auto;
+  width: 95%; }
+  .content h1, .content h2 {
+    color: #FDBB03;
+    font-weight: 400; }
+  .content header {
+    text-align: center; }
 
 section {
   width: 100%; }
@@ -16,12 +26,22 @@ section {
     section {
       max-width: 25%; } }
 
-.nav-bar {
-  font-size: 30px; }
-
-body {
-  font-size: 50px; }
-
-nav ul{
-	font-size: 50px;
-}
+nav {
+  height: 100px;
+  color: white; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #74BF2E; }
+    @media screen and (min-width: 1024px) {
+      nav ul {
+        height: 100%; } }
+    @media screen and (min-width: 640px) {
+      nav ul {
+        height: 50%; } }
+  nav li {
+    display: inline; }
+    nav li a:hover {
+      font-color: #FDBB03;
+      text-decoration: none; }

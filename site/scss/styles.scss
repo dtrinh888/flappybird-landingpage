@@ -1,13 +1,30 @@
 $tablet: 'min-width: 768px';
 $desktop: 'min-width: 1024px';
+$mobile: 'min-width: 640px';
+$nav-color: #74BF2E;
+$hover-color: #FDBB03;
+$header-color: #FDBB03;
 
 .container {
 	width: 100%;
 	margin: 0;
-	@media screen and (min-width: 640px) {
+	background-color: #70C4CE;
+	@media screen and ($mobile) {
 		width: 90%;
 		max-width: 960px;
 		margin: 0 auto;
+	}
+}
+
+.content {
+	margin: 0 auto;
+	width: 95%;
+	h1, h2 {
+		color: $header-color;
+		font-weight: 400;
+	}
+	header {
+		text-align: center;
 	}
 }
 
@@ -21,10 +38,27 @@ section {
 	}
 }
 
-.nav-bar {
-	font-size: 30px;
+nav {
+	height: 100px;
+	color: white;
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: $nav-color;
+		@media screen and ($desktop) {
+			height: 100%;
+		}
+		@media screen and ($mobile) {
+			height: 50%;
+		}
+	}
+	li {
+		display: inline;
+		a:hover {
+			font-color: $hover-color;
+			text-decoration: none;
+		}
+	}
 }
 
-body {
-	font-size: 50px;
-}
