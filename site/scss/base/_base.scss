@@ -1,6 +1,6 @@
-@import "normalize";
-@import "bourbon/bourbon";
-@import "neat/neat";
-@import "base/base";
-@import "components/*";
-@import "patterns/*";
+@import "site/scss/normalize.scss";
+@import "site/scss/01-plugins/bourbon";
+@import "site/scss/01-plugins/neat";
+@import "site/scss/base";
+@import "site/scss/components/*";
+@import "site/scss/patterns/*";
