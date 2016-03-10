@@ -1,3 +1,7 @@
+@import './site/scss/base';
+@import './site/scss/components';
+@import './site/scss/patterns';
+
 $tablet: 'min-width: 768px';
 $desktop: 'min-width: 1024px';
 $mobile: 'min-width: 640px';
