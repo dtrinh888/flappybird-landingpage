@@ -6,6 +6,7 @@ $hover-color: #FDBB03;
 $header-color: #FDBB03;
 
 .container {
+	@include outer-container;
 	width: 100%;
 	margin: 0;
 	background-color: #70C4CE;
@@ -27,6 +28,16 @@ $header-color: #FDBB03;
 		text-align: center;
 	}
 }
+
+/* .app-content {
+	@include outer-container;
+	aside {
+		@include span-columns(3);
+	}
+	article {
+		@include span-columns(9);
+	}
+} */
 
 section {
 	width: 100%;
