@@ -1,4 +1,5 @@
 .container {
+  /* @include outer-container; */
   width: 100%;
   margin: 0;
   background-color: #70C4CE; }
@@ -17,6 +18,15 @@
   .content header {
     text-align: center; }
 
+/* .app-content {
+	@include outer-container;
+	aside {
+		@include span-columns(3);
+	}
+	article {
+		@include span-columns(9);
+	}
+} */
 section {
   width: 100%; }
   @media screen and (min-width: 768px) {

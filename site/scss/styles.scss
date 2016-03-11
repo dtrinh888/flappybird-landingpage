@@ -1,3 +1,5 @@
+@import "bourbon";
+
 $tablet: 'min-width: 768px';
 $desktop: 'min-width: 1024px';
 $mobile: 'min-width: 640px';
@@ -6,7 +8,7 @@ $hover-color: #FDBB03;
 $header-color: #FDBB03;
 
 .container {
-	@include outer-container;
+	/* @include outer-container; */
 	width: 100%;
 	margin: 0;
 	background-color: #70C4CE;
